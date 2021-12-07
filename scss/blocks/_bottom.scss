@@ -1,0 +1,124 @@
+.bottom{
+    display: block;
+    max-width: 1300px !important;
+    padding: 0 30px !important;
+    margin: 0 auto !important;
+    align-items: center;
+    border: 1px solid rgba(0, 186, 252, 1) ;
+    height: 543px;
+    justify-content: space-between;
+    background-color:rgba(0, 186, 252, 1) ;
+    h3{
+       margin: 2% 0% 2% 40%;
+    }
+    p{
+        text-align: center;
+        margin: 0px 20% 0% 20%;
+    }
+    &__home{
+        display: block;
+      width: 30%;
+      height: 50%;
+      margin:5% 0% 0% 35% ;
+      background-color:white ;
+      input{
+          width: 300px;
+          height: 56px;
+          border-radius:6px ;
+          margin: 2%;
+      }
+      .info{
+         width: 300px;
+         height: 56px;
+       
+         border-radius: 6px;
+         margin: 2%;
+
+      }
+    }
+
+}
+@media (min-width:481px) and (max-width:768px){
+    .bottom{
+        display: block;
+        max-width: 768px !important;
+        padding: 0px !important;
+        margin: 0 auto !important;
+        align-items: center;
+        border: 1px solid rgba(0, 186, 252, 1) ;
+        height: 543px;
+        justify-content: space-between;
+        background-color:rgba(0, 186, 252, 1) ;
+        h3{
+           margin: 2% 0% 2% 40%;
+        }
+        p{
+            text-align: center;
+            margin: 0px 20% 0% 20%;
+        }
+        &__home{
+            display: block;
+          width: 50%;
+          height: 50%;
+          margin:5% 27% 0% 27% ;
+          background-color:white ;
+          input{
+              width: 95%;
+              height: 56px;
+              border-radius:6px ;
+              margin: 2%;
+          }
+          .info{
+             width: 95%;
+             height: 56px;
+           
+             border-radius: 6px;
+             margin: 2%;
+    
+          }
+        }
+    
+    }
+}
+@media (min-width:320px) and (max-width:481px){
+    .bottom{
+        display: block;
+        max-width: 481px !important;
+        padding: 0px !important;
+        margin: 0 auto !important;
+        align-items: center;
+        border: 1px solid rgba(0, 186, 252, 1) ;
+        height: 543px;
+        justify-content: space-between;
+        background-color:rgba(0, 186, 252, 1) ;
+        h3{
+           margin: 2% 0% 2% 35%;
+        }
+        p{
+            text-align: center;
+            margin: 0px 20% 0% 20%;
+        }
+        &__home{
+            display: block;
+          width: 70%;
+          height: 50%;
+          margin:5% 15% 0% 15% ;
+          background-color:white ;
+          input{
+              width: 95%;
+              height: 56px;
+              border-radius:6px ;
+              margin: 2%;
+          }
+          .info{
+             width: 95%;
+             height: 56px;
+           
+             border-radius: 6px;
+             margin: 2%;
+    
+          }
+        }
+    
+    }
+}

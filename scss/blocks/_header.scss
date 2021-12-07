@@ -1,0 +1,158 @@
+.header {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    max-width: 1300px !important;
+    padding: 0 30px !important;
+    margin: 0 auto !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    // background-color: white;
+    border: 1px solid black;
+    &__logo{
+        margin-left: 60px;
+    }
+    
+    &__deppo {
+        display: none;
+        width: 56px;
+        height: 56px;
+        
+        background-color: rgb(170, 133, 106);
+        align-items: center;
+       
+    }
+
+    &__navbar {
+        display: flex;
+        &__link {
+            display: flex;
+            list-style: none;
+
+            &__phone {
+                display: none;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                margin-left: 25px;
+            }
+        }
+    }
+    &__phone {
+        width: 159px;
+        height: 40px;
+        background-color: rgba(0, 186, 252, 1);
+        border-radius: 5px;
+        margin-right: 40px;
+        color: white;
+        text-decoration: none;
+        padding: 8px 0px 0px 20px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .header {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display: flex;
+        max-width: 768px !important;
+        padding: 0 10px !important;
+        margin: 0 auto !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 56px;
+        background-color: cadetblue;
+        border: 1px solid black;
+        &__logo {
+            height: 40px;
+            margin-left: 0px;
+        }
+        &__deppo {
+            display: none;
+        }
+        &__navbar {
+            display: flex;
+            margin-left: 0px;
+            &:hover{
+                background-color: rgb(255, 0, 55);
+                border-radius: 50px;
+                a{
+                    &:hover{
+                        background-color: darkturquoise;
+                        border-radius: 50px;
+                    }
+                }
+
+            }
+        }
+        &__phone {
+            display: block;
+            position: absolute;
+            align-items: center;
+            width: 159px;
+            height: 40px;
+            background-color: rgba(0, 186, 252, 1);
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            margin-top: 100px;
+            margin-left: 235px;
+            &:hover {
+                background-color: rgb(112, 23, 23);
+                transform: 1s;
+                border-radius: 30px;
+                color: blue;
+            }
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .header {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display: flex;
+        max-width: 481px !important;
+        padding: 0 10px !important;
+        margin: 0 auto !important;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 56px;
+        background-color: rgb(193, 196, 172);
+        border: 1px solid black;
+        &__logo {
+            height: 50px;
+            margin-top: 5%;
+           
+            
+            
+        }
+        &__deppo {
+            display: flex;
+            &:hover ~ .header__navbar {
+                display: block;
+                background-color: rgb(0, 0, 0);
+                transform: translatey(0, 0);
+                transition: all 1.5s ease;
+                left: 0;
+            }
+        }
+        &__navbar {
+            box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+            position: absolute;
+            display: block;
+            transform: translatey(-100%);
+            justify-content: center;
+            top: 100px;
+            left: -200px;
+            a {
+                color: rgb(255, 255, 255);
+            }
+        }
+      
+        &__phone {
+            display: none;
+        }
+    }
+}

@@ -1,5 +1,19 @@
 .container{
     max-width: 1160px!important;
     padding: 0 30px!important;
-    margin: 0 auto!important;
+    margin: 0 auto!important;   
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .container{
+        max-width: 768px!important;
+        padding: 0 10px!important;
+        margin: 0 auto!important;   
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .container{
+        max-width: 480px!important;
+        padding: 0px!important;
+        margin: 0 auto!important;   
+    }
 }
